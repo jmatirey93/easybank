@@ -7,6 +7,7 @@
   --lightGray: hsl(0, 0%, 98%);
   --white: hsl(0, 0%, 100%);
   font-size: 16px;
+  --wrapperSpace: 1.5em;
 }
 
 body {
@@ -27,9 +28,17 @@ body {
 .hero .copy {
   margin-bottom: 2.5em;
 }
+.hero__image {
+  border: 1px solid red;
+  height: 300px;
+  margin: 0 calc(-1 * var(--wrapperSpace));
+  background: url("../../static/images/image-mockups.png") center bottom no-repeat, url("../../static/images/bg-intro-mobile.svg") center no-repeat;
+  background-size: 345px, cover;
+  margin-bottom: 1.2em;
+}
 
 .wrapper {
-  padding: 0 1.8em;
+  padding: 0 var(--wrapperSpace);
 }
 
 .title {
