@@ -1,4 +1,6 @@
 @import "./header.scss";
+@import "./hero.scss";
+@import "./menu.scss";
 
 :root {
 --darkBlue: hsl(233, 26%, 24%);
@@ -8,7 +10,6 @@
 --gray: hsl(220, 16%, 96%);
 --lightGray: hsl(0, 0%, 98%);
 --white: hsl(0, 0%, 100%);
-font-size: 16px;
 --wrapperSpace: 1.5em;
 }
 
@@ -17,6 +18,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     color: var(--grayBlue);
+    font-size: 16px;
 }
 
 .copy {
@@ -24,21 +26,6 @@ body {
     font-size: .9em;
 }
 
-.hero {
-    //border: solid red 2px;
-    text-align: center;
-    .copy {
-        margin-bottom: 2.5em;
-    }
-    &__image {
-        //border: 1px solid red;
-        height: 300px;
-        margin: 0 calc(-1 * var(--wrapperSpace));
-        background: url('../../static/images/image-mockups.png') center bottom no-repeat, url('../../static/images/bg-intro-mobile.svg') center no-repeat;
-        background-size: 345px, cover;
-        margin-bottom: 1.2em;
-    }
-}
 
 .wrapper {
     padding: 0 var(--wrapperSpace);
@@ -46,7 +33,7 @@ body {
 
 .title {
     border: 1px solid red;
-    &_h1 {
+    &__h1 {
         //border: 1px solid blue;
         font-size: 2.5em;
         color: var(--darkBlue);
