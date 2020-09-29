@@ -1,3 +1,7 @@
+header {
+  border: 1px solid red;
+}
+
 :root {
   --darkBlue: hsl(233, 26%, 24%);
   --limeGreen: hsl(136, 65%, 51%);
@@ -29,7 +33,6 @@ body {
   margin-bottom: 2.5em;
 }
 .hero__image {
-  border: 1px solid red;
   height: 300px;
   margin: 0 calc(-1 * var(--wrapperSpace));
   background: url("../../static/images/image-mockups.png") center bottom no-repeat, url("../../static/images/bg-intro-mobile.svg") center no-repeat;
