@@ -41,6 +41,42 @@ header {
   margin-bottom: 1.5em;
 }
 
+.latestArticles {
+  background: var(--lightGray);
+  padding: 5em 0;
+}
+.latestArticles .title__h1, .latestArticles .title__h3, .latestArticles .title__h2 {
+  text-align: center;
+}
+.latestArticles .title__h3 {
+  text-align: left;
+}
+.latestArticles__grid {
+  display: grid;
+  row-gap: 2em;
+}
+.latestArticles__item {
+  border-radius: 0.5em;
+  overflow: hidden;
+  background: var(--white);
+}
+.latestArticles__item-content {
+  padding: 1.8em;
+}
+.latestArticles__item small {
+  color: var(--grayBlue);
+  margin-bottom: 1em;
+  display: block;
+}
+.latestArticles__item .copy {
+  color: var(--grayBlue);
+}
+.latestArticles__item img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 :root {
   --darkBlue: hsl(233, 26%, 24%);
   --limeGreen: hsl(136, 65%, 51%);
@@ -73,10 +109,7 @@ body {
   padding: 0 var(--wrapperSpace);
 }
 
-.title {
-  border: 1px solid red;
-}
-.title__h1, .title__h2 {
+.title__h1, .title__h3, .title__h2 {
   font-size: 2.5em;
   color: var(--darkBlue);
   font-weight: 300;
@@ -86,6 +119,9 @@ body {
 }
 .title__h2 {
   font-size: 1.5em;
+}
+.title__h3 {
+  font-size: 1em;
 }
 
 .button {
