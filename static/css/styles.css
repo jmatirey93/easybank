@@ -189,7 +189,6 @@
 }
 @media screen and (min-width: 1024px) {
   .latestArticles__grid {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -256,6 +255,7 @@ body {
   max-width: 1115px;
   margin: auto;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .title__h1 {
