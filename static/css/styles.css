@@ -174,6 +174,25 @@
   object-fit: cover;
   display: block;
 }
+@media screen and (min-width: 768px) {
+  .latestArticles__item-content {
+    padding: 1em;
+  }
+  .latestArticles-content {
+    padding: 1em;
+  }
+  .latestArticles__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .latestArticles__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
 
 .footer {
   background: var(--darkBlue);
@@ -237,7 +256,6 @@ body {
   max-width: 1115px;
   margin: auto;
   width: 100%;
-  box-sizing: border-box;
 }
 
 .title__h1 {
