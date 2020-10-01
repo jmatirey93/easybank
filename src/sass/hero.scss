@@ -51,7 +51,38 @@
         background-size: cover;
       }
     }
-    @media screen and (min-width: 1024px){
+
+    @media screen and (min-width: 768px){
+    .copy {
+        margin-right: 2em;
+    }
+        &__image {
+    grid-area: image;
+    min-height: inherit;
+    position: absolute;
+    width: 398px;
+    left: 0;
+    top: -150px;
+    /* height: 768px; */
+    background: url(../images/image-mockups.png) left bottom no-repeat;
+    background-size: cover;
+    }
+}
+@media screen and (min-width: 1024px){
+&__image {
+    grid-area: image;
+    min-height: inherit;
+    position: absolute;
+    width: 615px; 
+    left: 0;
+    top: -200px;
+    /* height: 768px; */
+    //background: url(../images/image-mockups.png) left bottom no-repeat;
+    /* background-size: cover; */
+}
+}
+
+    @media screen and (min-width: 1440px){
       // background: url('../images/bg-intro-desktop.svg') left 650px top -290px no-repeat ;
       &__content {
         // position: static;

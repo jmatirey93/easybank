@@ -75,7 +75,35 @@
     background-size: cover;
   }
 }
+@media screen and (min-width: 768px) {
+  .hero .copy {
+    margin-right: 2em;
+  }
+  .hero__image {
+    grid-area: image;
+    min-height: inherit;
+    position: absolute;
+    width: 398px;
+    left: 0;
+    top: -150px;
+    /* height: 768px; */
+    background: url(../images/image-mockups.png) left bottom no-repeat;
+    background-size: cover;
+  }
+}
 @media screen and (min-width: 1024px) {
+  .hero__image {
+    grid-area: image;
+    min-height: inherit;
+    position: absolute;
+    width: 615px;
+    left: 0;
+    top: -200px;
+    /* height: 768px; */
+    /* background-size: cover; */
+  }
+}
+@media screen and (min-width: 1440px) {
   .hero__imageSrc {
     display: block;
     position: relative;
@@ -279,7 +307,7 @@
   .footer .wrapper {
     display: grid;
     grid-column-gap: 7em;
-    grid-template-columns: 200px 1fr 400px;
+    grid-template-columns: 200px 1fr 345px;
     grid-template-areas: "logo links button" "social links copyright";
   }
   .footer__links {
