@@ -36,6 +36,7 @@
 }
 .hero .copy {
   margin-bottom: 2.5em;
+  margin-right: 2em;
 }
 .hero__image {
   height: 300px;
@@ -67,26 +68,10 @@
     grid-area: image;
     min-height: inherit;
     position: absolute;
-    width: 500px;
-    left: 0;
-    top: 0;
-    height: 768px;
-    background: url("../images/image-mockups.png") left bottom no-repeat;
-    background-size: cover;
-  }
-}
-@media screen and (min-width: 768px) {
-  .hero .copy {
-    margin-right: 2em;
-  }
-  .hero__image {
-    grid-area: image;
-    min-height: inherit;
-    position: absolute;
     width: 398px;
     left: 0;
     top: -150px;
-    /* height: 768px; */
+    height: 768px;
     background: url(../images/image-mockups.png) left bottom no-repeat;
     background-size: cover;
   }
@@ -349,7 +334,7 @@ body {
   margin: 0;
   color: var(--grayBlue);
   font-size: 16px;
-  overflow-x: hidden;
+  overflow-x: none;
 }
 
 .copy {

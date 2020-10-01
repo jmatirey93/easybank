@@ -4,6 +4,7 @@
     background: var(--lightGray);
     .copy {
       margin-bottom: 2.5em;
+      margin-right: 2em;
     }
     &__image {
       // border: 1px solid red;
@@ -35,39 +36,35 @@
       &__description {
         // border: 1px solid green;
       }
-  
-      &__image {
+
+     &__image {
         grid-area: image;
         min-height: inherit;
-        // background: none;
         position: absolute;
-        // border: 1px solid purple;
-        width: 500px;
-        // left: 550px;
+        width: 398px;
         left: 0;
-        top: 0;
-        height: 768px;
-        background: url('../images/image-mockups.png') left bottom no-repeat;
+        top: -150px;
+        height: 768px; 
+        background: url(../images/image-mockups.png) left bottom no-repeat;
         background-size: cover;
-      }
     }
 
-    @media screen and (min-width: 768px){
-    .copy {
-        margin-right: 2em;
+  
+    //   &__image {
+    //     grid-area: image;
+    //     min-height: inherit;
+    //     // background: none;
+    //     position: absolute;
+    //     // border: 1px solid purple;
+    //     width: 500px;
+    //     // left: 550px;
+    //     left: 0;
+    //     top: 0;
+    //     height: 768px;
+    //     background: url('../images/image-mockups.png') left bottom no-repeat;
+    //     background-size: cover;
+    //   }
     }
-        &__image {
-    grid-area: image;
-    min-height: inherit;
-    position: absolute;
-    width: 398px;
-    left: 0;
-    top: -150px;
-    /* height: 768px; */
-    background: url(../images/image-mockups.png) left bottom no-repeat;
-    background-size: cover;
-    }
-}
 @media screen and (min-width: 1024px){
 &__image {
     grid-area: image;
