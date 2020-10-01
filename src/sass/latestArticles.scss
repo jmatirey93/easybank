@@ -4,6 +4,7 @@
     padding: 5em 0;
     .title__h1 {
         text-align: center;
+        margin-bottom: 1em;
     }
     .title__h3 {
         text-align: left;
@@ -37,6 +38,9 @@
     }
 
     @media screen and (min-width: 768px) {
+        .title__h1 {
+            text-align: left;
+        }
         &__item {
             &-content {
                 padding: 1em;
