@@ -122,7 +122,20 @@
 }
 @media screen and (min-width: 768px) {
   .why {
-    border: 1px solid red;
+    text-align: left;
+  }
+  .why__grid {
+    display: grid;
+    grid-column-gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .why__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .why__main-text {
+    width: 508px;
   }
 }
 
